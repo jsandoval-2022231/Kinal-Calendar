@@ -47,9 +47,11 @@ body {
 .profile h1 {
     margin-top: 0;
     color: #333;
+    text-align: center;
 }
 
 .profile img {
+    align-items: center;
     width: 150px;
     height: 150px;
     border-radius: 50%;
