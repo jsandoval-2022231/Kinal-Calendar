@@ -5,15 +5,65 @@
 }
 
 body {
-    background-color: #efefef;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(29,28,74,1) 31%, rgba(41,38,101,1) 69%);;
     font-family: sans-serif;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #00abf0;
+}
+
+.list-contacts {
+    position: relative;
+    width: 450px;
+    margin: 0 auto 0;
+    padding: 10px;
+
+}
+
+.list-contacts li{
+    display: flex;
+    list-style: none;
+    background-color: #00abf0;
+    font-size: 150;
+    padding: 10px 20px;
+    color: #fff;
+    margin: 5px 0;
+    transition: 0.5s;
+
 }
 
 .contact-box {
     width: 500px;
     background-color: #fff;
     box-shadow: 0 0 20px 0 #999;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -24,8 +74,8 @@ form {
 }
 
 .input-field {
-    width: 400px;
-    height: 20px;
+    width: 425px;
+    height: 40px;
     margin-top: 10px;
     padding: 0 10px;
     border: 1px solid #777;
@@ -49,3 +99,4 @@ form {
     border: none;
     cursor: pointer;
 }
+
