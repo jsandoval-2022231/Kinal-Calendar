@@ -41,6 +41,7 @@ body {
 
 .list-contacts {
     position: relative;
+    
     width: 450px;
     margin: 0 auto 0;
     padding: 10px;
@@ -49,6 +50,7 @@ body {
 
 .list-contacts li{
     display: flex;
+    justify-content: space-between;
     list-style: none;
     background-color: #00abf0;
     font-size: 150;
@@ -57,46 +59,5 @@ body {
     margin: 5px 0;
     transition: 0.5s;
 
-}
-
-.contact-box {
-    width: 500px;
-    background-color: #fff;
-    box-shadow: 0 0 20px 0 #999;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-form {
-    margin: 35px;
-}
-
-.input-field {
-    width: 425px;
-    height: 40px;
-    margin-top: 10px;
-    padding: 0 10px;
-    border: 1px solid #777;
-    border-radius: 14px;
-    outline: none;
-}
-
-.contact-box form textarea {
-    height: 150px;
-    padding-top: 10px;
-}
-
-.btn {
-    border-radius: 20px;
-    height: 40px;
-    width: 100px;
-    color: #fff;
-    margin-top: 10px;
-    background-color: #47c35a;
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
 }
 
