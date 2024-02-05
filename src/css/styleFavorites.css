@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(29,28,74,1) 31%, rgba(41,38,101,1) 69%);
+    margin: 0;
+    padding: 20px;
+  }
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #00abf0;
+}
+  
+h1 {
+    display: flex;
+    color: #ededed;
+    justify-content: center;
+    align-items: center;
+}
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-list li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.user-list li h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.user-list li p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.user-list li .email {
+    color: #007bff;
+}
