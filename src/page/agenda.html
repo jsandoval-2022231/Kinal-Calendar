@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List</title>
     <link rel="stylesheet" href="../css/styleAgenda.css">
 </head>
 <body>
@@ -12,12 +12,15 @@
             <h1>To Do List By David Sandoval <img src="../multimedia/img/to-do-list.png" alt="an img about tasks"></h1>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your note">
+                <select id="priority-select">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
                 <button onclick="addTask()">Add</button>
             </div>
             <ul id="list-container">
-                <!-- <li class="checked">Task 1</li>
-                <li class="checked">Task 2</li>
-                <li class="checked">Task 3</li> -->
+                
             </ul>
         </section>
     </section>

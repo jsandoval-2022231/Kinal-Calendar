@@ -1,39 +1,38 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
-function addTask(){
-    if(inputBox.value === ''){
+function addTask() {
+    if (inputBox.value === '') {
         alert("you must write something!");
-    }else {
+    } else {
         let li = document.createElement("li");
-        li.innerHTML = inputBox.value;
+        let priority = document.getElementById("priority-select").value; 
+        li.innerHTML = `<span class="priority-${priority}">${priority}</span> ${inputBox.value}`; 
         listContainer.appendChild(li);
         let span = document.createElement("span");
         span.innerHTML = "\u000dx";
         li.appendChild(span);
     }
-    
+
     inputBox.value = "";
     saveData();
 }
 
-listContainer.addEventListener("click", function(e){
-    if(e.target.tagName === "LI"){
+listContainer.addEventListener("click", function (e) {
+    if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         saveData();
-    }
-    else if(e.target.tagName === "SPAN"){
+    } else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
         saveData();
     }
 }, false);
 
-function saveData(){
+function saveData() {
     localStorage.setItem("data", listContainer.innerHTML);
-
 }
 
-function showTask(){
+function showTask() {
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
